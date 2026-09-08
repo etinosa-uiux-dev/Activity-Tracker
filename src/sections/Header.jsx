@@ -10,6 +10,10 @@ function Header () {
     const navRef = useRef();
     const nav = useNavigate();
 
+    const handleTracker = () => {
+        nav("/tracker");
+    }
+
     const handleLogout = async () => {
         const success = await logOut();
 
@@ -48,6 +52,9 @@ function Header () {
             <nav className="hidden md:flex items-center gap-8">
                 <ul className="flex items-center gap-8">
                     <li>
+                        <p className="cursor-pointer" onClick={handleTracker}>Track</p>
+                    </li>
+                    <li>
                         <p className="cursor-pointer" onClick={handleHome}>Home</p>
                     </li>
                     <li>
@@ -84,6 +91,9 @@ function Header () {
 
             {menuOpen && (
                 <div className="absolute top-full left-0 w-full bg-indigo-700 flex flex-col item-start gap-4 p-5 md:hidden">
+                    <p className="cursor-pointer" onClick={handleTracker}>
+                        Track
+                    </p>
                     <p className="cursor-pointer" onClick={handleHome}>
                         Home
                     </p>
