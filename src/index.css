@@ -8,3 +8,8 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+
+@theme {
+  /* For header's menu */
+  --breakpoint-hidemenu: 57.5rem;
+}

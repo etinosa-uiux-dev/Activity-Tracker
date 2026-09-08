@@ -47,12 +47,12 @@ function Header () {
                         keeping pace with your life’s rhythm
                     </span>
                 </h1>
-            </div>            
+            </div>
 
-            <nav className="hidden md:flex items-center gap-8">
+            <nav className="hidden hidemenu:flex items-center gap-8">
                 <ul className="flex items-center gap-8">
                     <li>
-                        <p className="cursor-pointer" onClick={handleTracker}>Track</p>
+                        <p className="bg-blue-500 px-5 py-1 rounded-xl font-semibold cursor-pointer hover:bg-blue-400 hover:scale-105 transition duration-500" onClick={handleTracker}>Track</p>
                     </li>
                     <li>
                         <p className="cursor-pointer" onClick={handleHome}>Home</p>
@@ -85,14 +85,14 @@ function Header () {
                 </div>
             </nav>
 
-            <button className="block md:hidden text-2xl" onClick={ () => setMenuOpen(!menuOpen)}>
+            <button className="block hidemenu:hidden text-2xl" onClick={ () => setMenuOpen(!menuOpen)}>
                 <i className={`fa-solid ${menuOpen ? "fa-xmark" : "fa-bars"}`}></i>
             </button>
 
             {menuOpen && (
-                <div className="absolute top-full left-0 w-full bg-indigo-700 flex flex-col item-start gap-4 p-5 md:hidden">
-                    <p className="cursor-pointer" onClick={handleTracker}>
-                        Track
+                <div className="absolute top-full left-0 w-full bg-indigo-700 flex flex-col items-start gap-4 p-5 hidemenu:hidden">
+                    <p className="font-semibold cursor-pointer" onClick={handleTracker}>
+                        TRACK
                     </p>
                     <p className="cursor-pointer" onClick={handleHome}>
                         Home

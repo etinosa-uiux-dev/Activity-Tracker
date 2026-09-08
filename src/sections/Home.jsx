@@ -7,7 +7,7 @@ function Home () {
 
             <Header />
 
-            <div className="h-screen flex flex-col md:flex-row items-center justify-between px-5 sm:px-10 md:px-20 py-10 gap-8">
+            <div className="min-h-screen flex flex-col md:flex-row items-center justify-between px-5 sm:px-10 md:px-20 py-25 gap-8">
                 <div className="flex-1 text-center md:text-left">
                     <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold mb-4 sm:mb-6 md:mb-10 leading-snug">
                         Build Better Habits, One Day at a Time.
